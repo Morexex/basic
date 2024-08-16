@@ -1,6 +1,17 @@
 @php
-    $homeslide = App\Models\HomeSlide::find(1);
-    $allfooter = App\Models\Footer::findOrFail(1);
+    $homeslide = App\Models\HomeSlide::find(1) ?? (object) [
+        'home_slide' => 'assets/images/banner/banner-1.jpg',
+        'title' => 'Welcome to our company',
+        'short_title' => 'We are a creative agency that focuses on design, development, and growth.',
+        'video_url' => 'https://www.youtube.com/watch?v=7e90gBu4pas',
+    ];
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'facebook' => '#',
+        'twitter' => '#',
+        'linkedin' => '#',
+        'instagram' => '#',
+        'youtube' => '#',
+    ];
 @endphp
 
 

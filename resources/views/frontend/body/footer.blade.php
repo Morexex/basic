@@ -1,5 +1,13 @@
 @php
-    $allfooter = App\Models\Footer::find(1);
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'number' => '123-456-7890',
+        'short_description' => 'company official email for official matters',
+        'address' => 'update your address here',
+        'email' => 'update your email here',
+        'facebook' => '#',
+        'twitter' => '#',
+        'copyright' => 'All rights reserved',
+    ];
 @endphp
 
 

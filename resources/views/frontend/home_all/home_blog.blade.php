@@ -1,6 +1,16 @@
 @php
-    $blogs = App\Models\Blog::latest()->limit(3)->get();
-    $allfooter = App\Models\Footer::findOrFail(1);
+    $blogs = App\Models\Blog::latest()->limit(3)->get() ?? (object) [
+        'blog_image' => 'assets/images/blog/blog-1.jpg',
+        'blog_title' => 'Web Development',
+        'blog_category' => 'Web Development',
+    ];
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'facebook' => '#',
+        'twitter' => '#',
+        'linkedin' => '#',
+        'instagram' => '#',
+        'youtube' => '#',
+    ];
 @endphp
 
 <section class="blog">

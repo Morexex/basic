@@ -1,6 +1,16 @@
 @php
-    $services = App\Models\Services::latest()->get();
-    $allfooter = App\Models\Footer::findOrFail(1);
+    $services = App\Models\Services::latest()->get() ?? (object) [
+        'services_images' => 'assets/images/services/services-1.jpg',
+        'service_name' => 'Web Development',
+        'services_description' => 'We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth.',
+    ];
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'facebook' => '#',
+        'twitter' => '#',
+        'linkedin' => '#',
+        'instagram' => '#',
+        'youtube' => '#',
+    ];
 @endphp
 
 <section class="services">

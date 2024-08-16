@@ -12,8 +12,18 @@
     </div>
     <div class="tab-content" id="portfolioTabContent">
         @php
-            $portfolio = App\Models\Portfolio::latest()->get();
-            $allfooter = App\Models\Footer::findOrFail(1);
+            $portfolio = App\Models\Portfolio::latest()->get() ?? (object) [
+                'portfolio_image' => 'assets/images/portfolio/portfolio-1.jpg',
+                'portfolio_name' => 'Web Development',
+                'portfolio_title' => 'We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth.',
+            ];
+            $allfooter = App\Models\Footer::find(1) ?? (object) [
+                'facebook' => '#',
+                'twitter' => '#',
+                'linkedin' => '#',
+                'instagram' => '#',
+                'youtube' => '#',
+            ];
         @endphp
         <div class="tab-pane show active" id="all" role="tabpanel" aria-labelledby="graphic-tab">
             <div class="container">

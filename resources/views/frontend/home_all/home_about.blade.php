@@ -1,7 +1,19 @@
 @php
-    $aboutpage = App\Models\About::find(1);
-    $allMultiImage = App\Models\MultiImages::all();
-    $allfooter = App\Models\Footer::findOrFail(1);
+    $aboutpage = App\Models\About::find(1) ?? (object) [
+        'title' => 'About Us',
+        'short_title' => 'We are a creative agency that focuses on design, development, and growth.',
+        'short_description' => 'We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth.',
+    ];
+    $allMultiImage = App\Models\MultiImages::all() ?? (object) [
+        'multi_image' => 'assets/images/about/about-1.jpg',
+    ];
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'facebook' => '#',
+        'twitter' => '#',
+        'linkedin' => '#',
+        'instagram' => '#',
+        'youtube' => '#',
+    ];
 @endphp
 
 

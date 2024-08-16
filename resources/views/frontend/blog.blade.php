@@ -6,7 +6,9 @@
 @endsection
 
 @php
-    $allfooter = App\Models\Footer::findOrFail(1);
+    $allfooter = App\Models\Footer::find(1) ?? (object) [
+        'email' => 'update your email here',
+    ];
 @endphp
 
 <main>
