@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    About | TechHaven
+    About | Cee The Essence
 @endsection
 
 @php
@@ -86,84 +86,10 @@
                                 <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button"
                                     role="tab" aria-controls="about" aria-selected="true">About</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button"
-                                    role="tab" aria-controls="skills" aria-selected="false">Skills</button>
-                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
                                 <p class="desc">{!! $aboutpage->long_description !!}</p>
-                            </div>
-                            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-                                <div class="about__skill__wrap">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Communication</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span class="percentage">70%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Brain Storming</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span class="percentage">90%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">MySQL</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span class="percentage">50%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Figma</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span class="percentage">65%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Analytical Abilities</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span class="percentage">80%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Flutter</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span class="percentage">45%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Firebase</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span class="percentage">55%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about__skill__item">
-                                                <h5 class="title">Adobe Tools</h5>
-                                                <div class="progress">
-                                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percentage">85%</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

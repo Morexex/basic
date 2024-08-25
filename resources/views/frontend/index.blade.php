@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    Home | TechHaven
+    Home | Cee The Essence
 @endsection
 
 @php
@@ -30,7 +30,7 @@
             <div class="col-xl-6 col-lg-8">
                 <div class="section__title text-center">
                     <span class="sub-title">03 - Working Process</span>
-                    <h2 class="title">A clear product design process is the basis of success</h2>
+                    <h2 class="title">This are the steps our company takes to address your ticket</h2>
                 </div>
             </div>
         </div>
@@ -43,8 +43,10 @@
                         <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon01.png') }}" alt="">
                     </div>
                     <div class="work__process__content">
-                        <h4 class="title">Discover</h4>
-                        <p>Initial ideas or inspiration & Establishment of user needs.</p>
+                        <h4 class="title">Initial Inquiry and Booking</h4>
+                        <p>Collect details from the client regarding their needs,e.g., type of vehicle, rental duration, pick-up/drop_off locations,
+                            Offer a selection of available vehicles based of the client’s requirements,
+                            and Securing the reservation by confirming the vehicle, rental period, and cost. This may involve a deposit or full payment.</p>
                     </div>
                 </div>
             </div>
@@ -56,8 +58,10 @@
                         <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon02.png') }}" alt="">
                     </div>
                     <div class="work__process__content">
-                        <h4 class="title">Define</h4>
-                        <p>Interpretation & Alignment of findings to project objectives.</p>
+                        <h4 class="title">Preparation and Confirmation</h4>
+                        <p>Reconfirm the booking details with the client, including pick-up and drop_off times and locations.
+                            Ensure the vehicle is clean, serviced, and ready to be used. Checking any maintenance issues and resolve them beforehand.
+                            Prepare necessary documentation, including the rental agreement, insurance coverage details, and any required identification or payment information.<p>
                     </div>
                 </div>
             </div>
@@ -69,8 +73,11 @@
                         <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon03.png') }}" alt="">
                     </div>
                     <div class="work__process__content">
-                        <h4 class="title">Develop</h4>
-                        <p>Design-Led concept and Proposals hearted & assessed</p>
+                        <h4 class="title">Pick-Up Process</h4>
+                        <p>Welcome the client at the designated pick-up location. This could be at a rental office, airport, or other agreed-upon spot.
+                            Conduct a walk-around inspection of the vehicle with the client to note any pre-existing damage and explain key features.
+                            Go over the rental agreement with the client, ensuring they understand the terms, conditions, and any additional fees.
+                            Provide the client with the vehicle keys and any necessary documentation.</p>
                     </div>
                 </div>
             </div>
@@ -82,8 +89,10 @@
                         <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon04.png') }}" alt="">
                     </div>
                     <div class="work__process__content">
-                        <h4 class="title">Deliver</h4>
-                        <p>Process outcomes finalised & Implemented</p>
+                        <h4 class="title">Return Process</h4>
+                        <p>Guide the client where and how to retur the vehicle. This might be a specific drop_off location or instructions returning the vehicle after hours.
+                            Conduct a post-rental inspection of the vehicle to check any damage or excessive wear. Compare with the initial condition report.
+                            Process any additional charges where necessary e.g., extra mileage or damages and finalize the billing.</p>
                     </div>
                 </div>
             </div>
@@ -103,28 +112,28 @@
             <div class="col-lg-6">
                 <ul class="partner__logo__wrap">
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light01.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/') }}assets/img/icons/partner_01.png" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/lexus.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/') }}assets/img/icons/lexus.png" alt="">
                     </li>
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light02.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/partner_02.png') }}" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/bentley.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/assets/img/icons/bentley.png') }}" alt="">
                     </li>
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light03.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/partner_03.png') }}" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/benz.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/assets/img/icons/benz.png') }}" alt="">
                     </li>
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light04.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/partner_04.png') }}" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/bmw.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/assets/img/icons/bmw.png') }}" alt="">
                     </li>
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light05.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/partner_05.png') }}" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/honda.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/assets/img/icons/honda.png') }}" alt="">
                     </li>
                     <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/partner_light06.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/partner_06.png') }}" alt="">
+                        <img class="light" src="{{ asset('frontend/assets/img/icons/mazda.png') }}" alt="">
+                        <img class="dark" src="{{ asset('frontend/assets/img/icons/mazda.png') }}" alt="">
                     </li>
                 </ul>
             </div>
@@ -132,10 +141,13 @@
                 <div class="partner__content">
                     <div class="section__title">
                         <span class="sub-title">05 - partners</span>
-                        <h2 class="title">We are proud to have collaborated with some awesome companies</h2>
+                        <h2 class="title">We are proud to have a various variety of leasing car models</h2>
                     </div>
-                    <p>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.</p>
-                    <a href="contact.html" class="btn">Start a conversation</a>
+                    <p>Looking to hire a car? Look no further! We offer a wide range of high-quality vehicles for all your transportation needs. Whether you're planning a road trip, need a car for a special occasion, or simply want to upgrade your daily commute, we've got you covered.</p>
+                    <p>Our fleet includes a variety of models to suit your preferences and budget. From compact cars for city driving to spacious SUVs for family adventures, we have the perfect vehicle for every occasion. All our cars are well-maintained, clean, and ready to hit the road.</p>
+                    <p>With our easy booking process, you can quickly reserve your desired car and choose the pick-up and drop-off locations that are convenient for you. Our friendly and professional staff will ensure a smooth and hassle-free experience from start to finish.</p>
+                    <p>Dont miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with us today!</p>
+                    <a href="contact.me" class="btn">Start a conversation</a>
                 </div>
             </div>
         </div>
@@ -173,9 +185,11 @@
                                 <i class="fas fa-quote-left"></i>
                             </div>
                             <div class="testimonial__content">
-                                <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
+                                <p>We are extremely satisfied with the services provided by Cee The Essence. The team is truly expert, committed, and experienced in the financial markets. Their dedication to achieving continuous success is commendable.</p>
+                                <p>We highly recommend Cee The Essence for all your transportation needs. Their wide range of high-quality vehicles, easy booking process, and friendly staff make them the perfect choice. Whether you're planning a road trip or need a car for a special occasion, Cee The Essence has got you covered.</p>
+                                <p>Don't miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with Cee The Essence today!</p>
                                 <div class="testimonial__avatar">
-                                    <span>Rasalina De Wiliamson</span>
+                                    <span>Moses Nyanaro</span>
                                 </div>
                             </div>
                         </div>
@@ -184,11 +198,14 @@
                                 <i class="fas fa-quote-left"></i>
                             </div>
                             <div class="testimonial__content">
-                                <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
+                                <p>I am extremely satisfied with the services provided by Cee The Essence. The team is truly expert, committed, and experienced in the financial markets. Their dedication to achieving continuous success is commendable.</p>
+                                <p>I highly recommend Cee The Essence for all your transportation needs. Their wide range of high-quality vehicles, easy booking process, and friendly staff make them the perfect choice. Whether you're planning a road trip or need a car for a special occasion, Cee The Essence has got you covered.</p>
+                                <p>Don't miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with Cee The Essence today!</p>
                                 <div class="testimonial__avatar">
-                                    <span>Rasalina De Wiliamson</span>
+                                    <span>Wanjala Khamisi</span>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                     <div class="testimonial__arrow"></div>

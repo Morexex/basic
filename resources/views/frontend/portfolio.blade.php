@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    Portfolio | TechHaven
+    Portfolio | Cee The Essence
 @endsection
 
 @php

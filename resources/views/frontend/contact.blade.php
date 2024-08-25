@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    Contact | TechHaven
+    Contact | Cee The Essence
 @endsection
 
 @php

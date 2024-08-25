@@ -15,7 +15,10 @@ class ContactController extends Controller
     }//End Method
 
     public function Contact(){
-        $allfooter = Footer::findOrFail(1);
+        $allfooter = Footer::find(1) ?? (object) [
+
+        ];
+
         return view('frontend.contact',compact('allfooter'));
     }//End Method
 

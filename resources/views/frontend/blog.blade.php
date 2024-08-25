@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    Blog | TechHaven
+    Blog | Cee The Essence
 @endsection
 
 @php

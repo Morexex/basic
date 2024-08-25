@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-    Services | TechHaven
+    Services | Cee The Essence
 @endsection
 
 <main>
