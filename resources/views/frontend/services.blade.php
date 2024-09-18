@@ -46,7 +46,7 @@
                 @foreach ($services as $item)
                 <center>
                     <div class="col-lg-14">
-                        <h2 class="name">{{ $item->service_name }}</h2>
+                        <h2 class="name">{{ $item->services_name }}</h2>
                         <div class="services__details__thumb">
                             <img src="{{ asset($item->services_images) }}" alt="">
                         </div>

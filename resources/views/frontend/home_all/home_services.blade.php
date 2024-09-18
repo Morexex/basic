@@ -1,7 +1,7 @@
 @php
     $services = App\Models\Services::latest()->get() ?? (object) [
         'services_images' => 'assets/images/services/services-1.jpg',
-        'service_name' => 'Web Development',
+        'services_name' => 'Web Development',
         'services_description' => 'We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth. We are a creative agency that focuses on design, development, and growth.',
     ];
     $allfooter = App\Models\Footer::find(1) ?? (object) [
@@ -40,7 +40,7 @@
                             <img class="light" src="{{ asset('frontend/assets/img/icons/services_light_icon01.png') }}" alt="">
                             <img class="dark" src="{{ asset('frontend/assets/img/icons/services_icon01.png') }}" alt="">
                         </div>
-                        <h3 class="title"><a href="{{ route('services.details',$item->id) }}">{!! Str::limit($item->service_name, 17) !!}</a></h3>
+                        <h3 class="title"><a href="{{ route('services.details',$item->id) }}">{!! Str::limit($item->services_name, 17) !!}</a></h3>
                         <p>{!! Str::limit($item->services_description, 70) !!}</p>
                         <a href="{{ route('services.details',$item->id) }}" class="btn border-btn">Read more</a>
                     </div>

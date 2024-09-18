@@ -42,7 +42,7 @@
 
                             <tr>
                                 <td>{{ $i++ }}</td>
-                                <td>{{ $item->service_name }}</td>
+                                <td>{{ $item->services_name }}</td>
                                 <td>{{ $item->services_title }}</td>
                                 <td><img src="{{ asset($item->services_images) }}" style="width:60px; height:50px"></td>
                                 <td>

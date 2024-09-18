@@ -18,8 +18,8 @@
             <div class="row mb-3">
                 <label for="title" class="col-sm-2 col-form-label">Service Name</label>
                 <div class="col-sm-10">
-                    <input name="service_name" class="form-control" type="text" id="title">
-                    @error('service_name')
+                    <input name="services_name" class="form-control" type="text" id="title">
+                    @error('services_name')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>

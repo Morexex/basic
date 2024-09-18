@@ -20,13 +20,13 @@ class ServicesController extends Controller
 
     public function StoreServices(Request $request){
         $request->validate([
-            'service_name' => 'required',
+            'services_name' => 'required',
             'services_title' => 'required',
             'services_description' => 'required',
             'services_details' => 'required',
             'services_images' => 'required',
         ],[
-            'service_name.required' =>'Services Name is Required',
+            'services_name.required' =>'Services Name is Required',
             'services_title.required' =>'Services Title is Required',
             'services_description.required' =>'Services Title is Required',
             'services_details.required' =>'Services Title is Required',
@@ -39,7 +39,7 @@ class ServicesController extends Controller
         $save_url = 'upload/services/'.$name_gen;
 
         Services::insert([
-            'service_name' => $request->service_name,
+            'services_name' => $request->services_name,
             'services_title' => $request->services_title,
             'services_description' => $request->services_description,
             'services_details' => $request->services_details,
@@ -70,7 +70,7 @@ class ServicesController extends Controller
             $save_url = 'upload/services/'.$name_gen;
 
             Services::findOrFail($service_id)->update([
-                'service_name' => $request->service_name,
+                'services_name' => $request->services_name,
                 'services_title' => $request->services_title,
                 'services_description' => $request->services_description,
                 'services_details' => $request->services_details,
@@ -85,7 +85,7 @@ class ServicesController extends Controller
             return redirect()->route('all.services')->with($notification);
         }else{
             Services::findOrFail($service_id)->update([
-                'service_name' => $request->service_name,
+                'services_name' => $request->services_name,
                 'services_title' => $request->services_title,
                 'services_description' => $request->services_description,
                 'services_details' => $request->services_details,

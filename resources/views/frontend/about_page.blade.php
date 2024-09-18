@@ -120,7 +120,7 @@
                                 <img src="{{ asset('frontend/assets/img/icons/services_light_icon02.png') }}" alt="">
                             </div>
                             <div class="services__style__two__content">
-                                <h3 class="title"><a href="{{ route('services.details',$item->id) }}">{!! Str::limit($item->service_name, 17) !!}</a></h3>
+                                <h3 class="title"><a href="{{ route('services.details',$item->id) }}">{!! Str::limit($item->services_name, 17) !!}</a></h3>
                                 <p>{!! Str::limit($item->services_description, 50) !!}</p>
                                 <a href="{{ route('services.details',$item->id) }}" class="services__btn"><i class="far fa-long-arrow-right"></i></a>
                             </div>

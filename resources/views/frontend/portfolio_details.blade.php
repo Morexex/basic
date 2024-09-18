@@ -71,22 +71,18 @@
                             </form>
                         </div>
                         <div class="widget">
-                            <h5 class="title">Project Information</h5>
+                            <h5 class="title">Car Information</h5>
                             <ul class="sidebar__contact__info">
-                                <li><span>Date :</span> January, 2021</li>
-                                <li><span>Location :</span> East Meadow NY 11554</li>
-                                <li><span>Client :</span> American</li>
-                                <li class="cagegory"><span>Category :</span>
-                                    <a href="portfolio.html">Photo,</a>
-                                    <a href="portfolio.html">UI/UX</a>
-                                </li>
-                                <li><span>Project Link :</span> <a href="portfolio-details.html">https://www.yournews.com/</a></li>
+                                <li><span>Model :</span> {{ $portfolio->portfolio_title }}</li>
+                                <li><span>Year :</span> 2015</li>
+                                <li><span>Color :</span> Black</li>
+                                <li><span>Rental fee :</span> KSH 45,000</li>
                             </ul>
                         </div>
                         <div class="widget">
                             <h5 class="title">Contact Information</h5>
                             <ul class="sidebar__contact__info">
-                                <li><span>Address :</span> 8638 Amarica Stranfod, <br> Mailbon Star</li>
+                                <li><span>Address :</span> 8638 Kasarani Nairobi, <br> Roysambu</li>
                                 <li><span>Mail :</span> yourmail@gmail.com</li>
                                 <li><span>Phone :</span> +7464 0187 3535 645</li>
                                 <li><span>Fax id :</span> +9 659459 49594</li>
