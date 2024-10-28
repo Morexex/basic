@@ -2,256 +2,305 @@
 @section('main')
 
 @section('title')
-    Home | Cee The Essence
+    Home | Cynthia Portfolio
 @endsection
+<header class="header">
+    <a href="#home" class="logo">Cynthia<span>Mutheu</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, Its Cynthia <span>Mutheu</span></h1>
+        <h3 class="text-animation">Im a <span></span></h3>
+        <p>A passionate freelance model and content creator dedicated to capturing the essence of lifestyle and
+            creativity. With a keen eye for aesthetics and storytelling, I thrive on producing captivating visuals that
+            resonate with audiences. In addition to my modeling and content creation work, I am also the proud owner of
+            Cee the Essence, a car rental company where I strive to provide unique experiences on the road. Explore my
+            portfolio to see my latest projects, collaborations, and the services I offer. Let’s create something
+            extraordinary together!</p>
+        <div class="social-icons">
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/cee_the_essence?igsh=emI5ODFobWl3N2U0"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="#"><i class="bx bxl-tiktok"></i></a>
+        </div>
 
-@php
-    $allfooter = App\Models\Footer::find(1) ?? (object) [
-        'email' => 'updateyouremail.gmail.com',
-    ];
-@endphp
+        <div class="btn-group">
+            <a href="#" class="btn">Hire</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </div>
+    <div class="home-img">
+        <img src="{{ asset('frontend/assets/img/portfolio/image.jpeg') }}" alt="">
+    </div>
 
- <!-- banner-area -->
- @include('frontend.home_all.home_slide')
-<!-- banner-area-end -->
+</section>
 
-<!-- about-area -->
-@include('frontend.home_all.home_about')
-<!-- about-area-end -->
+<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    <div class="timeline-items">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018</div>
+            <div class="timeline-content">
+                <h3>High School</h3>
+                <p><span>Kiongwani Girls Secondary School</span></p>
+                <p>Kick-started my journey in adulthood, by managing to catapult myself to campus</p>
 
-<!-- services-area -->
-@include('frontend.home_all.home_services')
-<!-- services-area-end -->
+            </div>
 
-<!-- work-process-area -->
-<section class="work__process">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8">
-                <div class="section__title text-center">
-                    <span class="sub-title">03 - Working Process</span>
-                    <h2 class="title">This are the steps our company takes to address your ticket</h2>
-                </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>University</h3>
+                <p><span>University Of Embu</span></p>
+                <p>Start of growth of insterests in different fields though determined to secure a Degree in education
+                    field</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>Waitress and Content creator</h3>
+                <p><span>Wine Tails Hacienda</span></p>
+                <p>Growth of my social skills, marketting skills and hospitality in an attempt to discover what drives
+                    the people</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <h3>Internship</h3>
+                <p><span>Kaigonde Secondary School</span></p>
+                <p>As a teacher of always evelving students, i aced the teaching, in the meantime discovering the true
+                    scope and power of modelling, as a skill, tool and to go to source of comfort</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>Marketing Agent</h3>
+                <p><span>Grand Global Tours</span></p>
+                <p>The passion and art of marketing drew roots to my core as i understood the power of good marketing
+                    and dedication to audience</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <h3>CEO | Founder</h3>
+                <p><span>Cee the Essence</span></p>
+                <p>With my fond skills acuired, crafting my own chain of companies to further project the skill to my
+                    audience is makes sence.</p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-info">
+                    <img class="img-thumbnail" alt="200x200" width="400"
+                        src="{{ asset('frontend/assets/img/portfolio/modelling.jpg') }}" data-holder-rendered="true">
+
+                <h4>Freelance Modeling</h4>
+                <p>Transforming visions into reality, I offer versatile modeling services tailored for fashion,
+                    commercial shoots, and creative projects. Let’s collaborate to bring your ideas to life.</p>
             </div>
         </div>
-        <div class="row work__process__wrap">
-            <div class="col">
-                <div class="work__process__item">
-                    <span class="work__process_step">Step - 01</span>
-                    <div class="work__process__icon">
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/wp_light_icon01.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon01.png') }}" alt="">
-                    </div>
-                    <div class="work__process__content">
-                        <h4 class="title">Initial Inquiry and Booking</h4>
-                        <p>Collect details from the client regarding their needs,e.g., type of vehicle, rental duration, pick-up/drop_off locations,
-                            Offer a selection of available vehicles based of the client’s requirements,
-                            and Securing the reservation by confirming the vehicle, rental period, and cost. This may involve a deposit or full payment.</p>
-                    </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" alt="300x300" width="400"
+                        src="{{ asset('frontend/assets/img/portfolio/lending.jpg') }}" data-holder-rendered="true">
                 </div>
+                <h4>Luxury Car Rentals</h4>
+                <p>Experience the freedom of mobility with my flexible car lending solutions. Whether for a special
+                    occasion or daily consumption, I provide reliable vehicles to meet your needs.</p>
             </div>
-            <div class="col">
-                <div class="work__process__item">
-                    <span class="work__process_step">Step - 02</span>
-                    <div class="work__process__icon">
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/wp_light_icon02.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon02.png') }}" alt="">
-                    </div>
-                    <div class="work__process__content">
-                        <h4 class="title">Preparation and Confirmation</h4>
-                        <p>Reconfirm the booking details with the client, including pick-up and drop_off times and locations.
-                            Ensure the vehicle is clean, serviced, and ready to be used. Checking any maintenance issues and resolve them beforehand.
-                            Prepare necessary documentation, including the rental agreement, insurance coverage details, and any required identification or payment information.<p>
-                    </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" alt="300x300" width="400"
+                        src="{{ asset('frontend/assets/img/portfolio/content.jpg') }}" data-holder-rendered="true">
                 </div>
+                <h4>Content Creation</h4>
+                <p>Engaging and original content is at the heart of my services. I specialize in crafting compelling
+                    articles, videos, and social media posts that resonate with your audience.</p>
             </div>
-            <div class="col">
-                <div class="work__process__item">
-                    <span class="work__process_step">Step - 03</span>
-                    <div class="work__process__icon">
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/wp_light_icon03.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon03.png') }}" alt="">
-                    </div>
-                    <div class="work__process__content">
-                        <h4 class="title">Pick-Up Process</h4>
-                        <p>Welcome the client at the designated pick-up location. This could be at a rental office, airport, or other agreed-upon spot.
-                            Conduct a walk-around inspection of the vehicle with the client to note any pre-existing damage and explain key features.
-                            Go over the rental agreement with the client, ensuring they understand the terms, conditions, and any additional fees.
-                            Provide the client with the vehicle keys and any necessary documentation.</p>
-                    </div>
+        </div>
+
+        <div class="service-box">
+            <div class="service-info">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" alt="300x300" width="400"
+                        src="{{ asset('frontend/assets/img/portfolio/marketing.jpg') }}" data-holder-rendered="true">
                 </div>
+                <h4>Digital Marketing</h4>
+                <p>Enhance your online presence with my targeted digital marketing strategies. I focus on maximizing
+                    engagement and driving results through Modelling, social media, and advertising campaigns.</p>
             </div>
-            <div class="col">
-                <div class="work__process__item">
-                    <span class="work__process_step">Step - 04</span>
-                    <div class="work__process__icon">
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/wp_light_icon04.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/wp_icon04.png') }}" alt="">
-                    </div>
-                    <div class="work__process__content">
-                        <h4 class="title">Return Process</h4>
-                        <p>Guide the client where and how to retur the vehicle. This might be a specific drop_off location or instructions returning the vehicle after hours.
-                            Conduct a post-rental inspection of the vehicle to check any damage or excessive wear. Compare with the initial condition report.
-                            Process any additional charges where necessary e.g., extra mileage or damages and finalize the billing.</p>
-                    </div>
+        </div>
+    </div>
+    <div class="rate-card">
+        <div class="service-box">
+            <div class="service-info">
+                <h4>My Rate Card</h4>
+                <p>Enhance your online presence with my targeted digital marketing strategies. I focus on maximizing engagement and driving results through SEO, social media, and advertising campaigns.</p>
+            </div>
+            <div class="services-offered">
+                <div class="service-item">
+                    <h5>Freelence Model</h5>
+                    <p>Comprehensive three costume modelling for theme campaigns</p>
+                    <p><strong>Amount:</strong> $300</p>
+                    <p><strong>Period:</strong> One-time fee</p>
+                </div>
+                <div class="service-item">
+                    <h5>Social Media Marketing</h5>
+                    <p>Daily posting, engagement, and strategy development across platforms (Facebook, Instagram, Twitter).</p>
+                    <p><strong>Amount:</strong> $500/month</p>
+                    <p><strong>Period:</strong> Minimum 3 months</p>
+                </div>
+                <div class="service-item">
+                    <h5>Content Creation</h5>
+                    <p>Creation and management of targeted ad campaigns (Google Ads, Facebook Ads).</p>
+                    <p><strong>Amount:</strong> $750 per campaign</p>
+                    <p><strong>Period:</strong> Campaign duration: 30 days</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- work-process-area-end -->
 
-<!-- portfolio-area -->
-@include('frontend.home_all.home_portfolio')
-<!-- portfolio-area-end -->
-
-<!-- partner-area -->
-<section class="partner">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <ul class="partner__logo__wrap">
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/lexus.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/') }}assets/img/icons/lexus.png" alt="">
-                    </li>
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/bentley.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/bentley.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/benz.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/benz.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/bmw.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/bmw.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/honda.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/honda.png') }}" alt="">
-                    </li>
-                    <li>
-                        <img class="light" src="{{ asset('frontend/assets/img/icons/mazda.png') }}" alt="">
-                        <img class="dark" src="{{ asset('frontend/assets/img/icons/mazda.png') }}" alt="">
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <div class="partner__content">
-                    <div class="section__title">
-                        <span class="sub-title">05 - partners</span>
-                        <h2 class="title">We are proud to have a various variety of leasing car models</h2>
-                    </div>
-                    <p>Looking to hire a car? Look no further! We offer a wide range of high-quality vehicles for all your transportation needs. Whether you're planning a road trip, need a car for a special occasion, or simply want to upgrade your daily commute, we've got you covered.</p>
-                    <p>Our fleet includes a variety of models to suit your preferences and budget. From compact cars for city driving to spacious SUVs for family adventures, we have the perfect vehicle for every occasion. All our cars are well-maintained, clean, and ready to hit the road.</p>
-                    <p>With our easy booking process, you can quickly reserve your desired car and choose the pick-up and drop-off locations that are convenient for you. Our friendly and professional staff will ensure a smooth and hassle-free experience from start to finish.</p>
-                    <p>Dont miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with us today!</p>
-                    <a href="contact.me" class="btn">Start a conversation</a>
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-box">
+        <h2 class="heading">Testimonials</h2>
+        <div class="wrapper">
+            <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/portfolio/maish.jpeg') }}" alt="">
+                <h2>Maish Photography</h2>
+                <div class="rating">
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
                 </div>
+                <p>Natural model with the art of physic, capturing essence in every move and caption</p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/portfolio/profile.jpg') }}" alt="">
+                <h2>Moses Nyanaro</h2>
+                <div class="rating">
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                </div>
+                <p>My business is now a 5 star rated company thanks to your services. Happy customer!</p>
+            </div>
+
+            <div class="testimonial-item">
+                <img src="{{ asset('frontend/assets/img/portfolio/moses.jpg') }}" alt="">
+                <h2>Morecom Solutions</h2>
+                <div class="rating">
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                    <i class="bx bxs-star" id="star"></i>
+                </div>
+                <p>Cant mention success without your brand coming to perspective. Superb work Cynthia!</p>
             </div>
         </div>
     </div>
 </section>
-<!-- partner-area-end -->
 
-<!-- testimonial-area -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-@php
-    $allMultiImage = App\Models\MultiImages::all();
-@endphp
-<section class="testimonial">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6 order-0 order-lg-2">
-                <ul class="testimonial__avatar__img">
-                    @foreach ( $allMultiImage as $item )
-                    <li>
-                        <img class="light" src="{{ asset($item->multi_image) }}" alt="XD">
-
-                    </li>
-                    @endforeach
-                </ul>
+    <form method="post" action="{{ route('store.message') }}">
+        @csrf
+        <div class="input-group">
+            <div class="input-box">
+                <input name="name" type="text" placeholder="Full Name">
+                <input name="email" type="email" placeholder="Email">
             </div>
-            <div class="col-xl-5 col-lg-6">
-                <div class="testimonial__wrap">
-                    <div class="section__title">
-                        <span class="sub-title">06 - Client Feedback</span>
-                        <h2 class="title">Happy clients feedback</h2>
-                    </div>
-                    <div class="testimonial__active">
-                        <div class="testimonial__item">
-                            <div class="testimonial__icon">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <div class="testimonial__content">
-                                <p>We are extremely satisfied with the services provided by Cee The Essence. The team is truly expert, committed, and experienced in the financial markets. Their dedication to achieving continuous success is commendable.</p>
-                                <p>We highly recommend Cee The Essence for all your transportation needs. Their wide range of high-quality vehicles, easy booking process, and friendly staff make them the perfect choice. Whether you're planning a road trip or need a car for a special occasion, Cee The Essence has got you covered.</p>
-                                <p>Don't miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with Cee The Essence today!</p>
-                                <div class="testimonial__avatar">
-                                    <span>Moses Nyanaro</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <div class="testimonial__icon">
-                                <i class="fas fa-quote-left"></i>
-                            </div>
-                            <div class="testimonial__content">
-                                <p>I am extremely satisfied with the services provided by Cee The Essence. The team is truly expert, committed, and experienced in the financial markets. Their dedication to achieving continuous success is commendable.</p>
-                                <p>I highly recommend Cee The Essence for all your transportation needs. Their wide range of high-quality vehicles, easy booking process, and friendly staff make them the perfect choice. Whether you're planning a road trip or need a car for a special occasion, Cee The Essence has got you covered.</p>
-                                <p>Don't miss out on the opportunity to explore new destinations, create unforgettable memories, and enjoy the freedom of having your own wheels. Start your car hire journey with Cee The Essence today!</p>
-                                <div class="testimonial__avatar">
-                                    <span>Wanjala Khamisi</span>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="testimonial__arrow"></div>
-                </div>
+            <div class="input-box">
+                <input name="phone" type="number" placeholder="Phone Number">
+                <input name="subject" type="text" placeholder="Subject">
             </div>
         </div>
-    </div>
-</section>
-<!-- testimonial-area-end -->
-
-<!-- blog-area -->
-@include('frontend.home_all.home_blog')
-<!-- blog-area-end -->
-
-<!-- contact-area -->
-<section class="homeContact">
-    <div class="container">
-        <div class="homeContact__wrap">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section__title">
-                        <span class="sub-title">07 - Say hello</span>
-                        <h2 class="title">Any questions? Feel free <br> to contact</h2>
-                    </div>
-                    <div class="homeContact__content">
-                        <p>Our team will reach out to you as soon as the message is received</p>
-                        <h2 class="mail"><a href="mailto:Info@webmail.com">{{ $allfooter->email }}</a></h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="homeContact__form">
-                        <form method="post" action="{{ route('store.message') }}" class="contact__form">
-                            @csrf
-                            <input name="name" type="text" placeholder="Enter your name*">
-                            <input name="email" type="email" placeholder="Enter your mail*">
-                            <input name="subject" type="text" placeholder="Enter your subject*">
-                            <input name="phone" type="text" placeholder="Your Phone*">
-                            <textarea name="message" id="message" placeholder="Enter your massage*"></textarea>
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div class="input-group-2">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
         </div>
-    </div>
+    </form>
 </section>
-<!-- contact-area-end -->
+<footer class="footer">
+    <div class="social">
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/cee_the_essence?igsh=emI5ODFobWl3N2U0"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
+        <a href="#"><i class="bx bxl-tiktok"></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Testimonials</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        Cynthia Mutheu || All rights reserved
+    </p>
+</footer>
 
 @endsection
