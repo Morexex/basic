@@ -212,7 +212,9 @@
         <div class="wrapper">
             <div class="testimonial-item">
                 <img src="{{ asset('frontend/assets/img/portfolio/maish.jpeg') }}" alt="">
-                <h2>Maish Photography</h2>
+                <h2>Maish Darion</h2>
+                <span>CEO Maish Photography</span>
+                <h3>0740911312</h3>
                 <div class="rating">
                     <i class="bx bxs-star" id="star"></i>
                     <i class="bx bxs-star" id="star"></i>
@@ -225,7 +227,9 @@
 
             <div class="testimonial-item">
                 <img src="{{ asset('frontend/assets/img/portfolio/profile.jpg') }}" alt="">
-                <h2>Moses Nyanaro</h2>
+                <h2>Michael Njoroge</h2>
+                <span>CEO Grand Tours</span>
+                <h3>0788696955</h3>
                 <div class="rating">
                     <i class="bx bxs-star" id="star"></i>
                     <i class="bx bxs-star" id="star"></i>
@@ -238,7 +242,9 @@
 
             <div class="testimonial-item">
                 <img src="{{ asset('frontend/assets/img/portfolio/moses.jpg') }}" alt="">
-                <h2>Morecom Solutions</h2>
+                <h2>Moses Nyanaro</h2>
+                <span>CEO Morecom Solutions</span>
+                <h3>0718702921</h3>
                 <div class="rating">
                     <i class="bx bxs-star" id="star"></i>
                     <i class="bx bxs-star" id="star"></i>
