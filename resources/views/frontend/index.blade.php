@@ -260,7 +260,7 @@
         <h2 class="heading">Testimonials</h2>
         <div class="wrapper">
             <div class="testimonial-item">
-                <img src="{{ asset('frontend/assets/img/portfolio/maish.jpeg') }}" alt="">
+                <img src="{{ asset('frontend/assets/img/portfolio/profile.jpg') }}" alt="">
                 <h2>Robert Moreka</h2>
                 <span>CEO Accura Management</span>
                 <h3>+254 728 082029</h3>
@@ -295,7 +295,7 @@
             </div>
 
             <div class="testimonial-item">
-                <img src="{{ asset('frontend/assets/img/portfolio/moses.jpg') }}" alt="">
+                <img src="{{ asset('frontend/assets/img/portfolio/profile.jpg') }}" alt="">
                 <h2>Esther Nyabate</h2>
                 <span>CEO Morecom Solutions</span>
                 <h3>0718702921</h3>
